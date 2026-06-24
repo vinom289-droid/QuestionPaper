@@ -13,20 +13,37 @@ const departments = [
     { id: "Commerce", name: "Department of Commerce  ", shift: ["I", "II"], hasUG: true, hasPG: true },
     { id: "Counselling psychology", name: "Department of Counselling psychology", shift: ["I", "II"], hasUG: true, hasPG: true },
     { id: "B.com Honours", name: "Department of B.com Honours", shift: ["I", "II"], hasUG: true, hasPG: true },
-    {
-        id: "Computer science", name: "Department of Computer science", shift: ["I", "II"], hasUG: true, hasPG: true, ug:
-         {
-            Core: [
-                "Programming in C",
-                "Data Structures",
-                "DBMS"
+    {id: "computerScience", name: "Department of Computer science", shift: ["I", "II"], hasUG: true, hasPG: true, 
+        ug:{
+            core: [
+                { code: "23UCS13CC01", name: "Core Course - 1: Python Programming" },
+                { code: "23UCS23CC02", name: "Core Course - 2: Object Oriented Programming with C++" },
+                { code: "23UCS23CC03", name: "Core Course - 3: Data Structures and Algorithms" },
+                { code: "23UCS33CC04", name: "Core Course - 4: Discrete Mathematics" },
+                { code: "23UCS33CC05", name: "Core Course - 5: Database Systems" },
+                { code: "23UCS43CC06", name: "Core Course - 6: Java Programming" },
+                { code: "23UCS43CC07", name: "Core Course - 7: Digital Computer Fundamentals and Microprocessor" },
+                { code: "23UCS53CC08", name: "Core Course - 8: Web Application Development" },
+                { code: "23UCS53CC09", name: "Core Course - 9: Operations Research" },
+                { code: "23UCS63CC10", name: "Core Course - 10: Software Engineering" },
+                { code: "23UCS63CC11", name: "Core Course - 11: Mobile Application Development" }
             ],
 
-            Allied: [
-                "Mathematics",
-                "Statistics"
+            allied: [
+                { code: "23UCS13AC01",  name: "Allied Course - 1: Numerical Methods" },
+                { code: "23UCS23AC02",  name: "Allied Course - 2: Statistical Methods" },
+                { code: "23UCS33AO01A", name: "Allied Optional - 1: Applied Physics - 1" },
+                { code: "23UCS33AO01B", name: "Allied Optional - 1: Principles of Electronics" },
+                { code: "23UCS43AO02A", name: "Allied Optional - 2: Applied Physics-2" },
+                { code: "23UCS43AO02B", name: "Allied Optional - 2: Communication Electronics" }
             ]
-        } },
+        },
+        pg:{
+            core:[
+                { code: "", name: "" },
+            ]
+        }
+    },
     { id: "Information Technology", name: "Department of Information Technology ", shift: ["I", "II"], hasUG: true, hasPG: true },
     { id: "Data Science", name: "Department of Data Science", shift: ["I", "II"], hasUG: true, hasPG: true },
     { id: "Electronics", name: "Department of Electronics", shift: ["I", "II"], hasUG: true, hasPG: true },
