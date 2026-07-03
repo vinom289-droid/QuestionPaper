@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
-import departments from "../data/Data";
+import data from "../data/Data";
 function Third({ search }) {
-    const filteredDepartments = departments.filter((dept) =>
+    const filteredDepartments = data.filter((dept) =>
         dept.name.toLowerCase().includes(search.toLowerCase())
     );
     return (
@@ -13,8 +13,8 @@ function Third({ search }) {
                             className="border-gray-200 mx-auto transition-all relative duration-100 px-4 border p-1 mb-2 rounded-xl hover:bg-[#550000] hover:text-white hover:scale-[1.04]"
                             key={dept.id}
                         >
-                            <Link to={`/dept/${dept.id}`} className="flex items-center gap-4 w-ful">
-                                <div className="flex-1 truncate">
+                            <Link to={`/dept/${dept.id}`} className="flex items-center gap-4 w-full">
+                                <div className="flex-1">
                                     {dept.name}
                                 </div>
                                 <div className="flex gap-1 shrink-0">

@@ -3,7 +3,7 @@ import './App.css';
 import Homepage from './pages/Homepage';
 import Departments from "./pages/Department";
 import Categories from "./pages/Categories";
-
+import Subjects from "./pages/Subjects";
 
 function App() {
   return (
@@ -17,6 +17,10 @@ function App() {
       <Route
         path="/dept/:id/:courseType"
         element={<Categories />}
+      />
+      <Route
+        path="/dept/:id/:courseType/:category"
+        element={<Subjects />}
       />
     </Routes> 
   );
