@@ -6,7 +6,7 @@ const commonSubjects = {
             { code: "23UTA21GL02", name: "General Tamil - 2" },
             { code: "23UTA31GL03", name: "General Tamil - 3" },
             { code: "23UTA41GL04B", name: "General Tamil - 4 (Scientific Tamil)" },
-            { code: "", name: "" },
+            { code: "23UTA41GL04C", name: "General Tamil - 4 வணிகத் தமிழ் (Business Tamil)" },
             { code: "23UEN12GE01", name: "General English - 1" },
             { code: "23UEN22GE02", name: "General English - 2" },
             { code: "23UEN32GE03", name: "General English - 3" },

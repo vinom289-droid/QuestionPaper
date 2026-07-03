@@ -202,7 +202,7 @@ const departments = [
                 { code: "25UBO63CC11", name: "Core Course - 11: Plant Physiology" },
                 { code: "25UBO63CC12", name: "Core Course - 12: Genetic Engineering and Biotechnology" },
             ],
-            allied:[
+            allied: [
                 { code: "23UBO13AC01", name: "Allied Course - 1: Allied Zoology - 1" },
                 { code: "23UBO23AC02", name: "Allied Course - 2: Agricultural Entomology" },
                 { code: "23UBO33AO01A", name: "Allied Optional - 1: Chemistry for Biologists - 1" },
@@ -216,7 +216,7 @@ const departments = [
                 { code: "25UBO43AO02A", name: "Allied Optional - 2: Chemistry for Biologist - 2" },
                 { code: "25UBO43AO02B", name: "Allied Optional - 2: Biometrics and Computer Applications - 2" },
             ],
-            dse:[
+            dse: [
                 { code: "23UBO53ES01A", name: "Discipline Specific Elective - 1: Molecular Biology" },
                 { code: "23UBO53ES01B", name: "Discipline Specific Elective - 1: Bioinformatics and Bionanotechnology" },
                 { code: "23UBO53ES02A", name: "Discipline Specific Elective - 2: Research Methodology" },
@@ -241,7 +241,8 @@ const departments = [
             ]
         }
     },
-    { id: "biotechnology", name: "Department of Biotechnology", shift: ["I", "II"], hasUG: true, hasPG: true,
+    {
+        id: "biotechnology", name: "Department of Biotechnology", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
             core: [
                 { code: "25UBT13CC01", name: "Core Course - 1: Cell Biology" },
@@ -276,9 +277,82 @@ const departments = [
                 { code: "25UBT63ES04A", name: "Discipline Specific Elective - 4: Pharmaceutical Biotechnology" },
                 { code: "25UBT63ES04B", name: "Discipline Specific Elective - 4: Bio entrepreneurship" },
             ]
+        },
+        pg: {
+            core: [
+                { code: "", name: "" },
+            ],
         }
-     },
-    { id: "businessAdministration", name: "Department of Business Administration", shift: ["I", "II"], hasUG: true, hasPG: false, },
+    },
+    {
+        id: "businessAdministration", name: "Department of Business Administration", shift: ["I", "II"], hasUG: true, hasPG: false,
+        ug: {
+            core: [
+                { code: "23UBU13CC01", name: "Core Course - 1: Principles of Management" },
+                { code: "23UBU13CC02", name: "Core Course - 2: Accounting for Managers - 1" },
+                { code: "23UBU23CC03", name: "Core Course - 3: Human Resource Management" },
+                { code: "23UBU23CC04", name: "Core Course - 4: Marketing Management" },
+                { code: "23UBU23CC05", name: "Core Course - 5: Business Communication" },
+                { code: "23UBU33CC06", name: "Core Course - 6: Accounting for Managers - 2" },
+                { code: "23UBU33CC07", name: "Core Course - 7: TallyPrime" },
+                { code: "23UBU43CC08", name: "Core Course - 8: Operations Research for Managers" },
+                { code: "23UBU43CC09", name: "Core Course - 9: Business Analytics" },
+                { code: "23UBU53CC10", name: "Core Course - 10: Management Accounting" },
+                { code: "23UBU53CC11", name: "Core Course - 11: Legal Aspects of Business" },
+                { code: "23UBU53CC12", name: "Core Course - 12: Research Methods for Management" },
+                { code: "23UBU63CC13", name: "Core Course - 13: Financial Management" },
+                { code: "23UBU63CC14", name: "Core Course - 14: International Business" },
+                { code: "25UBU13CC01", name: "Core Course - 1: Principles of Management" },
+                { code: "25UBU13CC02", name: "Core Course - 2: Financial Accounting" },
+                { code: "25UBU13CC03", name: "Core Course - 3: Computer Applications in Business" },
+                { code: "25UBU23CC04", name: "Core Course - 4: Human Resource Management" },
+                { code: "25UBU23CC05", name: "Core Course - 5: Marketing Management" },
+                { code: "25UBU33CC06", name: "Core Course - 6: Operations Research for Managers" },
+                { code: "25UBU33CC07", name: "Core Course - 7: Tally Prime" },
+                { code: "25UBU43CC08", name: "Core Course - 8: Financial Management" },
+                { code: "25UBU43CC09", name: "Core Course - 9: Business Analytics (IEC)" },
+                { code: "25UBU53CC10", name: "Core Course - 10: Business Communication" },
+                { code: "25UBU53CC11", name: "Core Course - 11: Business Law" },
+                { code: "25UBU53CC12", name: "Core Course - 12: Organizational Behaviour" },
+                { code: "25UBU63CC13", name: "Core Course - 13: Cost and Management Accounting" },
+                { code: "25UBU63CC14", name: "Core Course - 14: International Business" },
+                { code: "25UBU63CC15", name: "Core Course - 15: Research Methodology" },
+            ],
+            allied: [
+                { code: "23UBU13AC01", name: "Allied Course - 1: Managerial Economics" },
+                { code: "23UBU23AC02", name: "Allied Course - 2: Business Mathematics and Statistics for Managers" },
+                { code: "23UBU33AO01A", name: "Allied Optional - 1: Organizational Behaviour" },
+                { code: "23UBU33AO01B", name: "Allied Optional - 1: Emotional Intelligence and Managerial Effectiveness" },
+                { code: "23UBU43AO02A", name: "Allied Optional - 2: Entrepreneurial Development" },
+                { code: "23UBU43AO02B", name: "Allied Optional - 2: Management of Business Sustainability" },
+                { code: "25UBU13AC01", name: "Allied Course - 1: Managerial Economics" },
+                { code: "25UBU23AC02", name: "Allied Course - 2: Business Mathematics and Statistics for Managers" },
+                { code: "25UBU33AO01A", name: "Allied Optional - 1: Management Information System" },
+                { code: "25UBU33AO01B", name: "Allied Optional - 1: E Commerce" },
+                { code: "25UBU43AO02A", name: "Allied Optional - 2: Entrepreneurship Development" },
+                { code: "25UBU43AO02B", name: "Allied Optional - 2: Management of Micro, Small and Medium Enterprises" },
+
+            ],
+            dse: [
+                { code: "23UBU53ES01A", name: "Discipline Specific Elective - 1: Production and Material Management" },
+                { code: "23UBU53ES01B", name: "Discipline Specific Elective - 1: Strategic Management" },
+                { code: "23UBU53ES02A", name: "Discipline Specific Elective - 2: Banking and Insurance Management" },
+                { code: "23UBU53ES02B", name: "Discipline Specific Elective - 2: Financial Planning and Investment Management" },
+                { code: "23UBU63ES03A", name: "Discipline Specific Elective - 3: Services Marketing" },
+                { code: "23UBU63ES03B", name: "Discipline Specific Elective - 3: Logistics and Supply Chain Management" },
+                { code: "23UBU63ES04A", name: "Discipline Specific Elective - 4: Industrial Relations and Labour Laws" },
+                { code: "23UBU63ES04B", name: "Discipline Specific Elective - 4: Leadership and Group Dynamics" },
+                { code: "25UBU53ES01A", name: "Discipline Specific Elective - 1: EXIM Policy and documentation" },
+                { code: "25UBU53ES01B", name: "Discipline Specific Elective - 1: International Ventures, Mergers & Acquisitions" },
+                { code: "25UBU53ES02A", name: "Discipline Specific Elective - 2: Financial Planning and Investment Management" },
+                { code: "25UBU53ES02B", name: "Discipline Specific Elective - 2: Accounts Assistant (NSQF Based Course)" },
+                { code: "25UBU63ES03A", name: "Discipline Specific Elective - 3: Production Management" },
+                { code: "25UBU63ES03B", name: "Discipline Specific Elective - 3: Logistics and supply chain Management" },
+                { code: "25UBU63ES04A", name: "Discipline Specific Elective - 4: Industrial Relations" },
+                { code: "25UBU63ES04B", name: "Discipline Specific Elective - 4: Performance Management" },
+            ]
+        }
+    },
     { id: "B.com Business analytics", name: "Department of B.com Business Analytics", shift: ["I", "II"], hasUG: true, hasPG: false },
     { id: "Commerce computer application", name: "Department of Commerce Computer Application", shift: ["I", "II"], hasUG: true, hasPG: true },
     { id: "B.com strategies finance", name: "Department of B.com strategies finance", shift: ["I", "II"], hasUG: true, hasPG: true },
