@@ -20,7 +20,20 @@ const departments = [
                 { code: "", name: "" },
                 { code: "", name: "" },
 
-            ]
+            ],
+            allied: [
+
+            ],
+            dse: [
+
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+
         }
     },
     {
@@ -86,7 +99,13 @@ const departments = [
                 { code: "25UEN63ES03B", name: "Discipline Specific Elective - 3: Stylistics" },
                 { code: "25UEN63ES04A", name: "Discipline Specific Elective - 4: Artificial Intelligence in Language and Literature" },
                 { code: "25UEN63ES04B", name: "Discipline Specific Elective - 4: Film Appreciation" },
-            ]
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
 
         },
         pg: {
@@ -158,7 +177,13 @@ const departments = [
                 { code: "25UAI63ES04A", name: "Discipline Specific Elective - 4: Human Computer Interaction" },
                 { code: "25UAI63ES04B", name: "Discipline Specific Elective - 4: Natural Language Processing" },
 
-            ]
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
         },
         pg: {
             core: [
@@ -234,6 +259,12 @@ const departments = [
                 { code: "25UBO63ES04A", name: "Discipline Specific Elective - 4: Bio-entrepreneurship" },
                 { code: "25UBO63ES04B", name: "Discipline Specific Elective - 4: Biological Techniques" },
             ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
         },
         pg: {
             core: [
@@ -276,7 +307,13 @@ const departments = [
                 { code: "25UBT63ES03B", name: "Discipline Specific Elective - 3: Biostatistics" },
                 { code: "25UBT63ES04A", name: "Discipline Specific Elective - 4: Pharmaceutical Biotechnology" },
                 { code: "25UBT63ES04B", name: "Discipline Specific Elective - 4: Bio entrepreneurship" },
-            ]
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
         },
         pg: {
             core: [
@@ -350,7 +387,13 @@ const departments = [
                 { code: "25UBU63ES03B", name: "Discipline Specific Elective - 3: Logistics and supply chain Management" },
                 { code: "25UBU63ES04A", name: "Discipline Specific Elective - 4: Industrial Relations" },
                 { code: "25UBU63ES04B", name: "Discipline Specific Elective - 4: Performance Management" },
-            ]
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
         }
     },
     {
@@ -420,7 +463,13 @@ const departments = [
                 { code: "25UBT63ES03B", name: "Discipline Specific Elective - 3: Biostatistics" },
                 { code: "25UBT63ES04A", name: "Discipline Specific Elective - 4: Pharmaceutical Biotechnology" },
                 { code: "25UBT63ES04B", name: "Discipline Specific Elective - 4: Bio entrepreneurship" },
-            ]
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
         }
     },
     {
@@ -487,6 +536,12 @@ const departments = [
                 { code: "25UCC63ES04A", name: "Discipline Specific Elective - 4: AI in Business Practice" },
                 { code: "25UCC63ES04B", name: "Discipline Specific Elective - 4: Total Quality Management" },
             ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
         }
     },
     { id: "B.com strategies finance", name: "Department of B.com strategies finance", shift: ["I", "II"], hasUG: true, hasPG: false,
@@ -544,7 +599,7 @@ const departments = [
                 { code: "25UCF33AO01A", name: "Allied Optional - 1: Financial Reporting" },
                 { code: "25UCF33AO01B", name: "Allied Optional - 1: Customer Relationship Management" },
                 { code: "25UCF43AO02A", name: "Allied Optional - 2: Research Methodology" },
-                { code: "25UCF43AO02B", name: "Allied Optional – 2 Labour Laws" },
+                { code: "25UCF43AO02B", name: "Allied Optional - 2 Labour Laws" },
 
             ],
             dse: [
@@ -560,12 +615,122 @@ const departments = [
                 { code: "25UCF63ES03B", name: "Discipline Specific Elective - 3: Introduction to SPSS" },
                 { code: "25UCF63ES04A", name: "Discipline Specific Elective - 4: Entrepreneurship Development" },
                 { code: "25UCF63ES04B", name: "Discipline Specific Elective - 4: Strategic Management" },
-            ]
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
         }
      },
-    { id: "Chemistry", name: "Department of Chemistry ", shift: ["I", "II"], hasUG: true, hasPG: true },
-    { id: "Commerce", name: "Department of Commerce  ", shift: ["I", "II"], hasUG: true, hasPG: true },
-    { id: "Counselling psychology", name: "Department of Counselling psychology", shift: ["I", "II"], hasUG: true, hasPG: true },
+    { id: "Chemistry", name: "Department of Chemistry ", shift: ["I", "II"], hasUG: true, hasPG: true,
+        ug: {
+            core: [
+                { code: "23UCH13CC01", name: "Core Course - 1: General Chemistry - 1" },
+                { code: "23UCH23CC02", name: "Core Course - 2: General Chemistry - 2" },
+                { code: "23UCH33CC03", name: "Core Course - 3: General Chemistry - 3" },
+                { code: "23UCH33CC04", name: "Core Course - 4: General Chemistry - 4" },
+                { code: "23UCH43CC05", name: "Core Course - 5: General Chemistry - 5" },
+                { code: "23UCH43CC06", name: "Core Course - 6: General Chemistry - 6" },
+                { code: "23UCH53CC07", name: "Core Course - 7: Organic Chemistry - 1" },
+                { code: "23UCH63CC08", name: "Core Course - 8: Organic Chemistry - 2" },
+                { code: "25UCH13CC01", name: "Core Course - 1: General Chemistry - 1" },
+                { code: "25UCH13CC02", name: "Core Course - 2: Foundations of Chemistry" },
+                { code: "25UCH 23CC03", name: "Core Course - 3: General Chemistry - 2" },
+                { code: "25UCH33CC04", name: "Core Course - 4: General Chemistry- 3" },
+                { code: "25UCH33CC05", name: "Core Course - 5: General Chemistry - 4" },
+                { code: "25UCH43CC06", name: "Core Course - 6: General Chemistry - 5" },
+                { code: "25UCH43CC07", name: "Core Course - 7: General Chemistry - 6" },
+                { code: "25UCH53CC08", name: "Core Course - 8: Inorganic Chemistry - 1" },
+                { code: "25UCH53CC09", name: "Core Course - 9: Organic Chemistry - 1" },
+                { code: "25UCH63CC10", name: "Core Course - 10: Inorganic Chemistry - 2" },
+                { code: "25UCH63CC11", name: "Core Course - 11: Physical Chemistry - 2" },
+
+            ],
+            allied: [
+                { code: "23UCH13AC01", name: "Allied Course - 1: Mathematics for Chemistry - 1" },
+                { code: "23UCH23AC02", name: "Allied Course - 2: Mathematics for Chemistry- 2" },
+                { code: "23UCH33AO01A", name: "Allied Optional - 1: Physics - 1" },
+                { code: "23UCH33AO01B", name: "Allied Optional - 1: Principles of Electronics" },
+                { code: "23UCH43AO02A", name: "Allied Optional - 2: Physics - 2" },
+                { code: "23UCH43AO02B", name: "Allied Optional - 2: Communication Electronics" },
+                { code: "25UCH13AC01", name: "Allied Course - 1: Mathematics for Chemistry - 1" },
+                { code: "25UCH23AC02", name: "Allied Course - 2: Mathematics for Chemistry - 2" },
+                { code: "25UCH33AO01A", name: "Allied Optional - 1: Physics - 1" },
+                { code: "25UCH33AO01B", name: "Allied Optional - 1: Principles of Electronics" },
+                { code: "25UCH43AO02A", name: "Allied Optional - 2: Physics - 2" },
+                { code: "25UCH43AO02B", name: "Allied Optional - 2: Communications Electronics" },
+            ],
+            dse: [
+                { code: "23UCH53ES01A", name: "Discipline Specific Elective-1: Inorganic Chemistry-1" },
+                { code: "23UCH53ES01B", name: "Discipline Specific Elective - 1: Inorganic Chemistry - 2" },
+                { code: "23UCH53ES02A", name: "Discipline Specific Elective - 2: Physical Chemistry - 1" },
+                { code: "23UCH53ES02B", name: "Discipline Specific Elective - 2: Physical Chemistry - 2" },
+                { code: "23UCH63ES03A", name: "Discipline Specific Elective - 3: Inorganic Chemistry - 3" },
+                { code: "23UCH63ES03B", name: "Discipline Specific Elective - 3: Inorganic Chemistry - 4" },
+                { code: "23UCH63ES04A", name: "Discipline Specific Elective - 4: Physical Chemistry - 3" },
+                { code: "23UCH63ES04B", name: "Discipline Specific Elective - 4: Physical Chemistry - 4" },
+                { code: "25UCH53ES01A", name: "Discipline Specific Elective - 1: Physical Chemistry - 1" },
+                { code: "25UCH53ES01B", name: "Discipline Specific Elective - 1: Spectroscopy and Electrochemistry" },
+                { code: "25UCH53ES02A", name: "Discipline Specific Elective - 2: Bioorganic Chemistry" },
+                { code: "25UCH53ES02B", name: "Discipline Specific Elective - 2: Pharmaceutical Chemistry" },
+                { code: "25UCH63ES03A", name: "Discipline Specific Elective - 3: Organic Chemistry - 2" },
+                { code: "25UCH63ES03B", name: "Discipline Specific Elective - 3: Health Science" },
+                { code: "25UCH63ES04A", name: "Discipline Specific Elective - 4: Current Trends in Chemistry - 1" },
+                { code: "25UCH63ES04B", name: "Discipline Specific Elective - 4: Current Trends in Chemistry - 2" },
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        },
+        pg: {
+            core: [
+
+            ],
+        }
+     },
+    { id: "Commerce", name: "Department of Commerce  ", shift: ["I", "II"], hasUG: true, hasPG: true,
+        ug: {
+            core: [
+
+            ],
+            allied: [
+
+            ],
+            dse: [
+
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        }
+     },
+    { id: "Counselling psychology", name: "Department of Counselling psychology", shift: ["I", "II"], hasUG: true, hasPG: true,
+        ug: {
+            core: [
+
+            ],
+            allied: [
+
+            ],
+            dse: [
+
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        }
+     },
     { id: "B.com Honours", name: "Department of B.com Honours", shift: ["I", "II"], hasUG: true, hasPG: true },
     {
         id: "computerScience", name: "Department of Computer science", shift: ["I", "II"], hasUG: true, hasPG: true,
@@ -597,7 +762,16 @@ const departments = [
                 { code: "", name: "" },
                 { code: "", name: "" },
                 { code: "", name: "" },
-            ]
+            ],
+            dse: [
+
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
         },
         pg: {
             core: [
@@ -605,12 +779,86 @@ const departments = [
             ]
         }
     },
-    { id: "Information Technology", name: "Department of Information Technology ", shift: ["I", "II"], hasUG: true, hasPG: true },
-    { id: "Data Science", name: "Department of Data Science", shift: ["I", "II"], hasUG: true, hasPG: true },
-    { id: "Electronics", name: "Department of Electronics", shift: ["I", "II"], hasUG: true, hasPG: true },
+    { id: "Information Technology", name: "Department of Information Technology ", shift: ["I", "II"], hasUG: true, hasPG: true,
+        ug: {
+            core: [
+
+            ],
+            allied: [
+
+            ],
+            dse: [
+
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        }
+     },
+    { id: "Data Science", name: "Department of Data Science", shift: ["I", "II"], hasUG: true, hasPG: true,
+        ug: {
+            core: [
+
+            ],
+            allied: [
+
+            ],
+            dse: [
+
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        }
+     },
+    { id: "Electronics", name: "Department of Electronics", shift: ["I", "II"], hasUG: true, hasPG: true,
+        ug: {
+            core: [
+
+            ],
+            allied: [
+
+            ],
+            dse: [
+
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        }
+     },
     { id: "Economics", name: "Department of Economics", shift: ["I", "II"], hasUG: true, hasPG: false },
     { id: "Human excellence", name: "Department of Human excellence", shift: ["I", "II"], hasUG: true, hasPG: true },
-    { id: "French", name: "Department of French", shift: ["I", "II"], hasUG: true, hasPG: false },
+    { id: "French", name: "Department of French", shift: ["I", "II"], hasUG: true, hasPG: false,
+        ug: {
+            core: [
+
+            ],
+            allied: [
+
+            ],
+            dse: [
+
+            ]
+        },
+        pg: {
+            core: [
+
+            ],
+            elective: [
+
+            ],
+        }
+    },
     { id: "Hindi", name: "Department of Hindi", shift: ["I", "II"], hasUG: true, hasPG: true },
     { id: "Human resources management", name: "Department of Human resources management", shift: ["I", "II"], hasUG: true, hasPG: true },
     { id: "History", name: "Department of History ", shift: ["I", "II"], hasUG: true, hasPG: true },
