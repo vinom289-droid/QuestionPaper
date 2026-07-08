@@ -1,7 +1,7 @@
 import Header from "../components/Header";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import data from "../data/Data";
-import { Link } from "react-router-dom";
+
 function Categories() {
     const { id, courseType } = useParams();
 
@@ -12,42 +12,68 @@ function Categories() {
                 { name: "Core Subjects", id: "core" },
                 { name: "Allied Subjects", id: "allied" },
                 { name: "Discipline Specific Elective", id: "dse" },
-                { name: "Others", id: "others" }
+                { name: "Generic Elective", id: "elective" },
+                { name: "Value Education", id: "ve" },
             ]
-            :[
-                {name:"Core Subjects",id:"core"},
-                {name:"Elective",id:"elective"},
-                {name:"Others",id:"others"}
-            ]
+            : [
+                { name: "Core Subjects", id: "core" },
+                { name: "Elective", id: "elective" },
+                { name: "Generic Elective", id: "electivePg" },
+                { name: "Open Elective", id: "openElective" },
+            ];
 
-    const department = data.find(
-        (dept) => dept.id === id
-    );
+    const department = data.find((dept) => dept.id === id);
+
     return (
-        <section className="h-screen">
+        <section className="min-h-screen bg-gray-50">
             <Header showSearch={false} />
 
-            <div className="p-7 text-center">
-                <h1 className="text-3xl font-bold text-[#550000]">
-                    {department.name.toUpperCase()}
-                </h1>
+            <div className="max-w-5xl mx-auto px-6 py-10">
 
-                <h2 className="mt-8 text-[16px] font-semibold">
-                    Select Category of the Subject
-                </h2>
-            </div>
-            <div className="flex flex-col gap-5 items-center">
-                {categories.map((category) => (
-                    <Link
-                        key={category.id}
-                        to={`/dept/${id}/${courseType}/${category.id}`}
-                        
-                    >
-                        <button className="px-10 py-3 rounded-xl bg-[#550000] font-semibold text-white hover:scale-105 transition hover:underline">
-                            {category.name}
-                        </button>
-                    </Link>
-                ))}
+                {/* Page Heading */}
+                <div className="text-center border-b border-gray-200 pb-6">
+                    <p className="text-sm text-gray-500 uppercase tracking-widest">
+                        {courseType === "ug"
+                            ? "Undergraduate Programme"
+                            : "Postgraduate Programme"}
+                    </p>
+
+                    <h1 className="mt-2 text-4xl font-bold text-[#550000]">
+                        {department.name}
+                    </h1>
+
+                    <p className="mt-3 text-gray-600">
+                        Select a subject category to continue.
+                    </p>
+                </div>
+
+                <div className="mt-10">
+
+                    <div>
+
+                        {categories.map((category) => (
+                            <Link
+                                key={category.id}
+                                to={`/dept/${id}/${courseType}/${category.id}`}
+                            >
+                                <div
+                                    className="bg-white border border-gray-200 rounded-lg px-6 py-3 mb-3 flex items-center justify-between hover:border-[#550000]  hover:bg-gray-100 transition duration-200 cursor-pointer"
+                                >
+                                    <span className="text-lg font-medium text-gray-800">
+                                        {category.name}
+                                    </span>
+
+                                    <span className="text-[#550000] text-xl font-bold">
+                                        →
+                                    </span>
+                                </div>
+                            </Link>
+                        ))}
+
+                    </div>
+
+                </div>
+
             </div>
         </section>
     );

@@ -2,6 +2,7 @@ const departments = [
     {
         id: "tamil", name: "Department of Tamil", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
+            title: "B.A.Tamil",
             core: [
                 { code: "23UTA13CC01", name: "Core Course - 1: இக்கால இலக்கியம் - 1 (Contemporary Literature)" },
                 { code: "23UTA13CC02", name: "Core Course - 2: நன்னூல் - எழுத்து (Nannool- Orthography)" },
@@ -34,11 +35,18 @@ const departments = [
 
             ],
 
+        },
+        pg: {
+            title: "M.A.Tamil",
+            core: [
+                { code: "", name: "" },
+            ]
         }
     },
     {
         id: "english", name: "Department of English", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
+            title: "B.A.English",
             core: [
                 { code: "23UEN13CC01", name: "Core Course - 1: Introduction to Literature" },
                 { code: "23UEN13CC02", name: "Core Course - 2: Indian Writing in English" },
@@ -109,6 +117,7 @@ const departments = [
 
         },
         pg: {
+            title: "M.A.English",
             core: [
                 { code: "", name: "" },
             ]
@@ -117,6 +126,7 @@ const departments = [
     {
         id: "artificialIntelligence", name: "Department of Artificial Intelligence", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
+            title: "B.Sc.Artificial Intelligence",
             core: [
                 { code: "24UAI13CC01", name: "Core Course - 1: Programming in C" },
                 { code: "24UAI13CC02", name: "Core Course - 2: Data Structures and Algorithms" },
@@ -186,6 +196,7 @@ const departments = [
             ],
         },
         pg: {
+            title: "M.Sc.Artificial Intelligence",
             core: [
                 { code: "", name: "" },
             ]
@@ -194,6 +205,7 @@ const departments = [
     {
         id: "biochemistry", name: "Department of Biochemistry ", shift: ["I", "II"], hasUG: false, hasPG: true,
         pg: {
+            title: "M.Sc.Biochemistry",
             core: [
                 { code: "", name: "" },
             ]
@@ -202,6 +214,7 @@ const departments = [
     {
         id: "botany", name: "Department of Botany", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
+            title: "B.Sc.Botany",
             core: [
                 { code: "23UBO13CC01", name: "Core Course - 1: Plant Diversity - 1 (Algae)" },
                 { code: "23UBO23CC02", name: "Core Course - 2: Bryophytes, Fungi, Lichens and Plant Pathology" },
@@ -267,6 +280,7 @@ const departments = [
             ],
         },
         pg: {
+            title: "M.Sc.Botany",
             core: [
                 { code: "", name: "" },
             ]
@@ -275,6 +289,7 @@ const departments = [
     {
         id: "biotechnology", name: "Department of Biotechnology", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
+            title: "B.Sc.Biotechnology",
             core: [
                 { code: "25UBT13CC01", name: "Core Course - 1: Cell Biology" },
                 { code: "25UBT13CC02", name: "Core Course - 2: Microbiology" },
@@ -316,6 +331,7 @@ const departments = [
             ],
         },
         pg: {
+            title: "M.Sc.Biotechnology",
             core: [
                 { code: "", name: "" },
             ],
@@ -324,6 +340,7 @@ const departments = [
     {
         id: "businessAdministration", name: "Department of Business Administration", shift: ["I", "II"], hasUG: true, hasPG: false,
         ug: {
+            title: "BBA",
             core: [
                 { code: "23UBU13CC01", name: "Core Course - 1: Principles of Management" },
                 { code: "23UBU13CC02", name: "Core Course - 2: Accounting for Managers - 1" },
@@ -399,6 +416,7 @@ const departments = [
     {
         id: "B.com Business analytics", name: "Department of B.com Business Analytics", shift: ["I", "II"], hasUG: true, hasPG: false,
         ug: {
+            title: "B.com Business Analytics",
             core: [
                 { code: "24UCB13CC01", name: "Core Course - 1: Financial Accounting - 1" },
                 { code: "24UCB13CC02", name: "Core Course - 2: Business Organisation and Management" },
@@ -475,6 +493,7 @@ const departments = [
     {
         id: "Commerce computer application", name: "Department of Commerce Computer Application", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
+            title: "B.com CA",
             core: [
                 { code: "23UCC13CC01", name: "Core Course - 1: Financial Accounting - 1" },
                 { code: "23UCC13CC02", name: "Core Course - 2: Principles of Management" },
@@ -542,10 +561,18 @@ const departments = [
             openElective: [
 
             ],
+        },
+        pg: {
+            title: "M.com CA",
+            core: [
+                { code: "", name: "" },
+            ]
         }
     },
-    { id: "B.com strategies finance", name: "Department of B.com strategies finance", shift: ["I", "II"], hasUG: true, hasPG: false,
+    {
+        id: "B.com strategies finance", name: "Department of B.com strategies finance", shift: ["I", "II"], hasUG: true, hasPG: false,
         ug: {
+            title: "B.com strategies finance",
             core: [
                 { code: "24UCF13CC01", name: "Core Course - 1: Financial Accounting - 1" },
                 { code: "24UCF13CC02", name: "Core Course - 2: Financial Planning and Performance" },
@@ -623,9 +650,11 @@ const departments = [
 
             ],
         }
-     },
-    { id: "Chemistry", name: "Department of Chemistry ", shift: ["I", "II"], hasUG: true, hasPG: true,
+    },
+    {
+        id: "Chemistry", name: "Department of Chemistry ", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
+            title: "B.Sc.Chemistry ",
             core: [
                 { code: "23UCH13CC01", name: "Core Course - 1: General Chemistry - 1" },
                 { code: "23UCH23CC02", name: "Core Course - 2: General Chemistry - 2" },
@@ -637,7 +666,7 @@ const departments = [
                 { code: "23UCH63CC08", name: "Core Course - 8: Organic Chemistry - 2" },
                 { code: "25UCH13CC01", name: "Core Course - 1: General Chemistry - 1" },
                 { code: "25UCH13CC02", name: "Core Course - 2: Foundations of Chemistry" },
-                { code: "25UCH 23CC03", name: "Core Course - 3: General Chemistry - 2" },
+                { code: "25UCH23CC03", name: "Core Course - 3: General Chemistry - 2" },
                 { code: "25UCH33CC04", name: "Core Course - 4: General Chemistry- 3" },
                 { code: "25UCH33CC05", name: "Core Course - 5: General Chemistry - 4" },
                 { code: "25UCH43CC06", name: "Core Course - 6: General Chemistry - 5" },
@@ -688,17 +717,108 @@ const departments = [
             ],
         },
         pg: {
+            title: "M.Sc.Chemistry ",
             core: [
 
             ],
         }
-     },
-    { id: "Commerce", name: "Department of Commerce  ", shift: ["I", "II"], hasUG: true, hasPG: true,
+    },
+    {
+        id: "Commerce", name: "Department of Commerce  ", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
+            title: "B.com ",
             core: [
-
+                { code: "23UCO13CC01", name: "Core Course - 1: Financial Accounting - 1" },
+                { code: "23UCO13CC02", name: "Core Course - 2: Principles of Management" },
+                { code: "23UCO23CC03", name: "Core Course - 3: Financial Accounting - 2" },
+                { code: "23UCO23CC04", name: "Core Course - 4: Principles of Marketing" },
+                { code: "23UCO33CC05", name: "Core Course - 5: Corporate Accounting" },
+                { code: "23UCO33CC06", name: "Core Course - 6: Business and Corporate Laws" },
+                { code: "23UCO43CC07", name: "Core Course - 7: Financial Management" },
+                { code: "23UCO43CC08", name: "Core Course - 8: Financial System and Services" },
+                { code: "23UCO43CC09", name: "Core Course - 9: Banking Theory Law and Practice" },
+                { code: "23UCO53CC10", name: "Core Course - 10: Fundamentals of Cost Accounting" },
+                { code: "23UCO53CC11", name: "Core Course - 11: Income Tax Law and Practice" },
+                { code: "23UCO63CC12", name: "Core Course - 12: Management Accounting" },
+                { code: "23UCO63CC13", name: "Core Course - 13: Costing Methods and Techniques" },
+                { code: "23UCO63CC14", name: "Core Course - 14: Auditing" },
+                { code: "25UCO13CC01", name: "Core Course - 1: Financial Accounting - 1" },
+                { code: "25UCO13CC02", name: "Core Course - 2: Principles of Management" },
+                { code: "25UCO13CC03", name: "Core Course - 3: Ancient Indian Trade Practices (IKS)" },
+                { code: "25UCO23CC04", name: "Core Course - 4: Financial Accounting - 2" },
+                { code: "25UCO23CC05", name: "Core Course - 5: Principles of Marketing" },
+                { code: "25UCO33CC06", name: "Core Course - 6: Corporate Accounting" },
+                { code: "25UCO33CC07", name: "Core Course - 7: Business and Corporate Laws" },
+                { code: "25UCO43CC08", name: "Core Course - 8: Financial Management" },
+                { code: "25UCO43CC09", name: "Core Course - 9: Tally Prime (Internship Embedded Course)" },
+                { code: "25UCO53CC10", name: "Core Course - 10: Fundamentals of Cost Accounting" },
+                { code: "25UCO53CC11", name: "Core Course - 11: Management Accounting" },
+                { code: "25UCO53CC12", name: "Core Course - 12: Excel for Business Intelligence" },
+                { code: "25UCO63CC13", name: "Core Course - 13: Income Tax Law and Practice" },
+                { code: "25UCO63CC14", name: "Core Course - 14: Costing Methods and Techniques" },
+                { code: "25UCO63CC15", name: "Core Course - 15: Auditing and Corporate Governance" },
             ],
             allied: [
+                { code: "23UCO13AC01A", name: "Allied Course - 1: Business Communication" },
+                { code: "23UCO13AC01B", name: "Allied Course - 1: Indian Economic Development" },
+                { code: "23UCO13AC01C", name: "Allied Course - 1: Business Economics" },
+                { code: "23UCO23AC02", name: "Allied Course - 2: TallyPrime" },
+                { code: "23UCO33AO01A", name: "Allied Optional - 1: Elements of Mathematics" },
+                { code: "23UCO33AO01B", name: "Allied Optional - 1: Business Mathematics" },
+                { code: "23UCO43AO02A", name: "Allied Optional - 2: Elements of Statistics" },
+                { code: "23UCO43AO02B", name: "Allied Optional - 2: Business Statistics" },
+                { code: "25UCO13AC01", name: "Allied Course - 1: Business Economics" },
+                { code: "25UCO23AC02", name: "Allied Course - 2: Banking Theory Law and Practice" },
+                { code: "25UCO33AO01A", name: "Allied Optional - 1: Elements of Mathematics" },
+                { code: "25UCO33AO01B", name: "Allied Optional - 1: Business Mathematics" },
+                { code: "25UCO43AO02A", name: "Allied Optional - 2: Elements of Statistics" },
+                { code: "25UCO43AO02B", name: "Allied Optional - 2: Business Statistics" },
+            ],
+            dse: [
+                { code: "23UCO53ES01A", name: "Discipline Specific Elective - 1: Advanced Financial Management" },
+                { code: "23UCO53ES01B", name: "Discipline Specific Elective - 1: Human Resource Management" },
+                { code: "23UCO53ES01C", name: "Discipline Specific Elective - 1: Consumer Behaviour and Marketing Research" },
+                { code: "23UCO53ES02A", name: "Discipline Specific Elective - 2: Excel for Financial Decisions" },
+                { code: "23UCO53ES02B", name: "Discipline Specific Elective - 2: Labour Laws" },
+                { code: "23UCO53ES02C", name: "Discipline Specific Elective - 2: Advertisement and Sales Promotion" },
+                { code: "23UCO63ES03A", name: "Discipline Specific Elective - 3: Insurance Management" },
+                { code: "23UCO63ES03B", name: "Discipline Specific Elective - 3: Organisational Behaviour" },
+                { code: "23UCO63ES03C", name: "Discipline Specific Elective - 3: Retail Management" },
+                { code: "23UCO63ES04A", name: "Discipline Specific Elective - 4: Financial Analytics" },
+                { code: "23UCO63ES04B", name: "Discipline Specific Elective - 4: HR Analytics" },
+                { code: "23UCO63ES04C", name: "Discipline Specific Elective - 4: Marketing Analytics" },
+                { code: "25UCO53ES01A", name: "Discipline Specific Elective - 1: Advanced Financial Management" },
+                { code: "25UCO53ES01B", name: "Discipline Specific Elective - 1: Human Resource Management" },
+                { code: "25UCO53ES01C", name: "Discipline Specific Elective - 1: Consumer Behaviour and Marketing Research" },
+                { code: "25UCO53ES02A", name: "Discipline Specific Elective - 2: Financial Technology" },
+                { code: "25UCO53ES02B", name: "Discipline Specific Elective - 2: Labour Laws" },
+                { code: "25UCO53ES02C", name: "Discipline Specific Elective - 2: Advertisement and Sales Promotion" },
+                { code: "25UCO63ES03A", name: "Discipline Specific Elective - 3: Insurance Management" },
+                { code: "25UCO63ES03B", name: "Discipline Specific Elective - 3: Organisational Behaviour" },
+                { code: "25UCO63ES03C", name: "Discipline Specific Elective - 3: Retail Management" },
+                { code: "25UCO63ES04A", name: "Discipline Specific Elective - 4: Financial Analytics" },
+                { code: "25UCO63ES04B", name: "Discipline Specific Elective - 4: HR Analytics" },
+                { code: "25UCO63ES04C", name: "Discipline Specific Elective - 4: Marketing Analytics" },
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        },
+        pg: {
+            title: "M.com ",
+            core: [
+                { code: "", name: "" },
+            ]
+        }
+    },
+    {
+        id: "Counselling psychology", name: "Department of Counselling psychology", shift: ["I", "II"], hasUG: false, hasPG: true,
+        pg: {
+            title: "M.Sc.Counselling psychology",
+            core: [
 
             ],
             dse: [
@@ -711,17 +831,116 @@ const departments = [
 
             ],
         }
-     },
-    { id: "Counselling psychology", name: "Department of Counselling psychology", shift: ["I", "II"], hasUG: true, hasPG: true,
+    },
+    {
+        id: "B.com Honours", name: "Department of B.com Honours", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
+            title: "B.com Honours",
             core: [
-
+                { code: "23UCR13CC01", name: "Core Course - 1: Financial Accounting" },
+                { code: "23UCR13CC02", name: "Core Course - 2: Organisation Management" },
+                { code: "23UCR23CC03", name: "Core Course - 3: TallyPrime" },
+                { code: "23UCR23CC04", name: "Core Course - 4: Corporate and Business Law - 2" },
+                { code: "23UCR23CC05", name: "Core Course - 5: Business Economics" },
+                { code: "23UCR33CC06", name: "Core Course - 6: Financial Reporting -1" },
+                { code: "23UCR33CC07", name: "Core Course - 7: Basics of Cost Accounting" },
+                { code: "23UCR33CC08", name: "Core Course - 8: Business Analytics" },
+                { code: "23UCR43CC09", name: "Core Course - 9: Financial Reporting - 2" },
+                { code: "23UCR43CC10", name: "Core Course - 10: Financial Management - 1" },
+                { code: "23UCR43CC11", name: "Core Course - 11: Fundamentals of Marketing Analytics" },
+                { code: "23UCR53CC12", name: "Core Course - 12: Financial Management - 2" },
+                { code: "23UCR53CC13", name: "Core Course - 13: Audit and Assurance" },
+                { code: "23UCR53CC14", name: "Core Course - 14: Direct Taxation" },
+                { code: "23UCR53CC15", name: "Core Course - 15: Governance, Risks and Ethics" },
+                { code: "23UCR53CC16", name: "Core Course - 16: Fundamentals of Financial Analytics" },
+                { code: "23UCR63CC17", name: "Core Course - 17: Management Accounting" },
+                { code: "23UCR63CC18", name: "Core Course - 18: Financial Services" },
+                { code: "23UCR63CC19", name: "Core Course - 19: Performance Management" },
+                { code: "23UCR63CC20", name: "Core Course - 20: Goods and Services Tax" },
+                { code: "23UCR63CC21", name: "Core Course - 21: Fundamentals of HR Analytics" },
+                { code: "24UCR13CC01", name: "Core Course - 1: Financial Accounting" },
+                { code: "24UCR13CC02", name: "Core Course - 2: Business and Technology" },
+                { code: "24UCR23CC03", name: "Core Course - 3: TallyPrime" },
+                { code: "24UCR23CC04", name: "Core Course - 4: Corporate and Business Law - 2" },
+                { code: "24UCR23CC05", name: "Core Course - 5: Business Economics" },
+                { code: "24UCR33CC06", name: "Core Course - 6: Financial Management" },
+                { code: "24UCR33CC07", name: "Core Course - 7: Management Accounting" },
+                { code: "24UCR33CC08", name: "Core Course - 8: Business Analytics" },
+                { code: "24UCR43CC09", name: "Core Course - 9: Performance Management" },
+                { code: "24UCR43CC10", name: "Core Course - 10: Direct Taxation" },
+                { code: "24UCR43CC11", name: "Core Course - 11: Fundamentals of Marketing Analytics" },
+                { code: "24UCR53CC12", name: "Core Course - 12: Strategic Business Reporting" },
+                { code: "24UCR53CC13", name: "Core Course - 13: Strategic Business Leader" },
+                { code: "24UCR53CC14", name: "Core Course - 14: Audit and Assurance" },
+                { code: "24UCR53CC15", name: "Core Course - 15: Fundamentals of Financial Analytics" },
+                { code: "24UCR63CC16", name: "Core Course - 16: Advanced Financial Management" },
+                { code: "24UCR63CC17", name: "Core Course - 17: Financial Services" },
+                { code: "24UCR63CC18", name: "Core Course - 18: Advanced Performance Management" },
+                { code: "24UCR63CC19", name: "Core Course - 19: Goods and Services Tax" },
+                { code: "24UCR63CC20", name: "Core Course - 20: Fundamentals of HR Analytics" },
+                { code: "25UCR13CC01", name: "Core Course - 1: Financial Accounting" },
+                { code: "25UCR13CC02", name: "Core Course - 2: Business and Technology" },
+                { code: "25UCR13CC03", name: "Core Course - 3: Corporate and Business Law - 1" },
+                { code: "25UCR23CC04", name: "Core Course - 4: Tally Prime (Internship Embedded Course)" },
+                { code: "25UCR23CC05", name: "Core Course - 5: Corporate and Business Law - 2" },
+                { code: "25UCR23CC06", name: "Core Course - 6: Business Economics" },
+                { code: "25UCR33CC07", name: "Core Course - 7: Accounts Assistant (NSQF Based Course)" },
+                { code: "25UCR33CC08", name: "Core Course - 8: Management Accounting" },
+                { code: "25UCR33CC09", name: "Core Course - 9: Business Analytics" },
+                { code: "25UCR43CC10", name: "Core Course - 10: Financial Management" },
+                { code: "25UCR43CC11", name: "Core Course - 11: Direct Taxation" },
+                { code: "25UCR43CC12", name: "Core Course - 12: Fundamentals of Marketing Analytics" },
+                { code: "25UCR53CC13", name: "Core Course - 13: Strategic Business Reporting" },
+                { code: "25UCR53CC14", name: "Core Course - 14: Strategic Business Leader" },
+                { code: "25UCR53CC15", name: "Core Course - 15: Performance Management" },
+                { code: "25UCR53CC16", name: "Core Course - 16: Audit and Assurance" },
+                { code: "25UCR63CC17", name: "Core Course - 17: Advanced Financial Management" },
+                { code: "25UCR63CC18", name: "Core Course - 18: Fundamentals of Financial Analytics" },
+                { code: "25UCR63CC19", name: "Core Course - 19: Advanced Performance Management" },
+                { code: "25UCR63CC20", name: "Core Course - 20: Goods and Services Tax" },
+                { code: "25UCR63CC21", name: "Core Course - 21: Fundamentals of HR Analytics" },
             ],
             allied: [
-
+                { code: "23UCR13AC01", name: "Allied Course - 1: Business Mathematics" },
+                { code: "23UCR23AC02", name: "Allied Course - 2: Business Statistics" },
+                { code: "23UCR33AO01A", name: "Allied Optional - 1: Marketing Management" },
+                { code: "23UCR33AO01B", name: "Allied Optional - 1: Customer Relationship Management" },
+                { code: "23UCR43AO02A", name: "Allied Optional - 2: Research Methodology" },
+                { code: "23UCR43AO02B", name: "Allied Optional - 2: Modern Banking" },
+                { code: "24UCR13AC01", name: "Allied Course - 1: Business Statistics" },
+                { code: "24UCR23AC02", name: "Allied Course -2: Financial Reporting" },
+                { code: "24UCR33AO01A", name: "Allied Optional - 1: Marketing Management" },
+                { code: "24UCR33AO01B", name: "Allied Optional - 1: Customer Relationship Management" },
+                { code: "24UCR43AO02A", name: "Allied Optional - 2: Research Methodology" },
+                { code: "24UCR43AO02B", name: "Allied Optional - 2: Modern Banking" },
+                { code: "25UCR13AC01", name: "Allied Course - 1: Business Statistics" },
+                { code: "25UCR23AC02", name: "Allied Course - 2: Financial Reporting" },
+                { code: "25UCR33AO01A", name: "Allied Optional - 1: Marketing Management" },
+                { code: "25UCR33AO01B", name: "Allied Optional - 1: Customer Relationship Management" },
+                { code: "25UCR43AO02A", name: "Allied Optional - 2: Research Methodology" },
+                { code: "25UCR43AO02B", name: "Allied Optional - 2: Business Management" },
             ],
             dse: [
-
+                { code: "23UCR53ES01A", name: "Discipline Specific Elective - 1: Human Resource Management" },
+                { code: "23UCR53ES01B", name: "Discipline Specific Elective - 1: Labour Laws" },
+                { code: "23UCR53ES02A", name: "Discipline Specific Elective - 2: Security Analysis" },
+                { code: "23UCR53ES02B", name: "Discipline Specific Elective - 2: Entrepreneurship in Practice" },
+                { code: "23UCR63ES03A", name: "Discipline Specific Elective - 3: Strategic Management" },
+                { code: "23UCR63ES03B", name: "Discipline Specific Elective - 3: Economics for Finance" },
+                { code: "24UCR53ES01A", name: "Discipline Specific Elective - 1: Human Resource Management" },
+                { code: "24UCR53ES01B", name: "Discipline Specific Elective- 1: Labour Laws" },
+                { code: "24UCR53ES02A", name: "Discipline Specific Elective - 2: Security Analysis and Portfolio Management" },
+                { code: "24UCR53ES02B", name: "Discipline Specific Elective - 2: Entrepreneurship in Practice" },
+                { code: "24UCR63ES03A", name: "Discipline Specific Elective - 3: Strategic Management" },
+                { code: "24UCR63ES03B", name: "Discipline Specific Elective - 3: Economics for Finance" },
+                { code: "25UCR53ES01A", name: "Discipline Specific Elective - 1: Human Resource Management" },
+                { code: "25UCR53ES01B", name: "Discipline Specific Elective - 1: Labour Laws" },
+                { code: "25UCR53ES02A", name: "Discipline Specific Elective - 2: Security Analysis and Portfolio Management" },
+                { code: "25UCR53ES02B", name: "Discipline Specific Elective - 2: Entrepreneurship in Practice" },
+                { code: "25UCR63ES03A", name: "Discipline Specific Elective - 3: Insurance and Risk Management" },
+                { code: "25UCR63ES03B", name: "Discipline Specific Elective - 3: Fin Tech" },
+                { code: "25UCR63ES04A", name: "Discipline Specific Elective - 4: Digital Banking" },
+                { code: "25UCR63ES04B", name: "Discipline Specific Elective - 4: Investment Management" },
             ],
             genericElective: [
 
@@ -729,12 +948,18 @@ const departments = [
             openElective: [
 
             ],
+        },
+        pg: {
+            title: "M.com Honours",
+            core: [
+                { code: "", name: "" },
+            ]
         }
-     },
-    { id: "B.com Honours", name: "Department of B.com Honours", shift: ["I", "II"], hasUG: true, hasPG: true },
+    },
     {
         id: "computerScience", name: "Department of Computer science", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
+            title: "B.Sc.Computer science",
             core: [
                 { code: "23UCS13CC01", name: "Core Course - 1: Python Programming" },
                 { code: "23UCS23CC02", name: "Core Course - 2: Object Oriented Programming with C++" },
@@ -746,7 +971,21 @@ const departments = [
                 { code: "23UCS53CC08", name: "Core Course - 8: Web Application Development" },
                 { code: "23UCS53CC09", name: "Core Course - 9: Operations Research" },
                 { code: "23UCS63CC10", name: "Core Course - 10: Software Engineering" },
-                { code: "23UCS63CC11", name: "Core Course - 11: Mobile Application Development" }
+                { code: "23UCS63CC11", name: "Core Course - 11: Mobile Application Development" },
+                { code: "25UCS13CC01", name: "Core Course - 1: Problem Solving using C" },
+                { code: "25UCS13CC02", name: "Core Course - 2: Digital Computer Fundamentals" },
+                { code: "25UCS23CC03", name: "Core Course - 3: Python Programming" },
+                { code: "25UCS23CC04", name: "Core Course - 4: Data Structures and Algorithms" },
+                { code: "25UCS33CC05", name: "Core Course - 5: Managing Work Environment" },
+                { code: "25UCS33CC06", name: "Core Course - 6: Relational Database Management Systems (Internship Embedded Course)" },
+                { code: "25UCS43CC07", name: "Core Course - 7: Java Programming" },
+                { code: "25UCS43CC08", name: "Core Course - 8: Discrete Mathematics" },
+                { code: "25UCS53CC09", name: "Core Course - 9: Operations Research" },
+                { code: "25UCS53CC10", name: "Core Course - 10: Web Application Development" },
+                { code: "25UCS53CC11", name: "Core Course - 11: Computer Architecture and Microprocessor (Internship Embedded Course)" },
+                { code: "25UCS63CC12", name: "Core Course - 12: Mobile Application Development using Android" },
+                { code: "25UCS63CC13", name: "Core Course - 13: Software Engineering" },
+                { code: "25UCS63CC14", name: "Core Course - 14: Operating Systems" },
             ],
 
             allied: [
@@ -756,12 +995,149 @@ const departments = [
                 { code: "23UCS33AO01B", name: "Allied Optional - 1: Principles of Electronics" },
                 { code: "23UCS43AO02A", name: "Allied Optional - 2: Applied Physics-2" },
                 { code: "23UCS43AO02B", name: "Allied Optional - 2: Communication Electronics" },
+                { code: "25UCS13AC01", name: "Allied Course - 1: Numerical Methods" },
+                { code: "25UCS23AC02", name: "Allied Course - 2 Statistical Methods" },
+                { code: "25UCS33AO01A", name: "Allied Optional - 1: Applied Physics - 1" },
+                { code: "25UCS33AO01B", name: "Allied Optional - 1: Principles of Electronics" },
+                { code: "25UCS43AO02A", name: "Allied Optional - 2: Applied Physics - 2" },
+                { code: "25UCS43AO02B", name: "Allied Optional - 2: Communication Electronics" },
+
+            ],
+            dse: [
+                { code: "23UCS53ES01A", name: "Discipline Specific Elective - 1: Operating Systems" },
+                { code: "23UCS53ES01B", name: "Discipline Specific Elective - 1: Digital Marketing" },
+                { code: "23UCS53ES02A", name: "Discipline Specific Elective - 2: Computer Networks" },
+                { code: "23UCS53ES02B", name: "Discipline Specific Elective - 2: Security in Computing" },
+                { code: "23UCS63ES03A", name: "Discipline Specific Elective - 3: Big Data Analytics" },
+                { code: "23UCS63ES03B", name: "Discipline Specific Elective - 3: Cloud Computing" },
+                { code: "23UCS63ES04A", name: "Discipline Specific Elective - 4: Internet of Things" },
+                { code: "23UCS63ES04B", name: "Discipline Specific Elective - 4: Artificial Intelligence and Machine Learning" },
+                { code: "25UCS53ES01A", name: "Discipline Specific Elective - 1: Computer Networks" },
+                { code: "25UCS53ES01B", name: "Discipline Specific Elective - 1: Digital Marketing" },
+                { code: "25UCS53ES02A", name: "Discipline Specific Elective - 2: Recent Trends in Computer Science" },
+                { code: "25UCS53ES02B", name: "Discipline Specific Elective - 2: Object Oriented Modeling and Design with UML" },
+                { code: "25UCS63ES03A", name: "Discipline Specific Elective- 3: Fundamentals of Data Science" },
+                { code: "25UCS63ES03B", name: "Discipline Specific Elective- 3: Cloud Computing" },
+                { code: "25UCS63ES04A", name: "Discipline Specific Elective - 4: Internet of Things" },
+                { code: "25UCS63ES04B", name: "Discipline Specific Elective - 4: Big Data Analytics" },
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        },
+        pg: {
+            title: "M.Sc.Computer science",
+            core: [
                 { code: "", name: "" },
+            ]
+        }
+    },
+    {
+        id: "computer application", name: "Department of Computer Application ", shift: ["I", "II"], hasUG: true, hasPG: true,
+        ug: {
+            title: "BCA",
+            core: [
+                { code: "23UBC13CC01", name: "Core Course - 1: Python Programming" },
+                { code: "23UBC23CC02", name: "Core Course - 2: Digital Computer Fundamentals" },
+                { code: "23UBC23CC03", name: "Core Course - 3: Relational Database Management Systems" },
+                { code: "23UBC33CC04", name: "Core Course - 4: Data Structures and Algorithms" },
+                { code: "23UBC33CC05", name: "Core Course - 5: Programming in Java" },
+                { code: "23UBC43CC06", name: "Core Course - 6: Software Engineering" },
+                { code: "23UBC43CC07", name: "Core Course - 7: Web Technologies" },
+                { code: "23UBC53CC08 ", name: "Core Course - 8: Programming with ASP.NET" },
+                { code: "23UBC53CC09", name: "Core Course - 9: R Programming" },
+                { code: "23UBC63CC10", name: "Core Course - 10: NoSQL with MongonDB" },
+                { code: "23UBC63CC11", name: "Core Course - 11: Fundamentals of React JS" },
+                { code: "25UBC13CC01", name: "Core Course - 1: C Programming" },
+                { code: "25UBC13CC02", name: "Core Course - 2: Digital Computer Fundamentals" },
+                { code: "25UBC23CC03", name: "Core Course - 3: Relational Database Management System" },
+                { code: "25UBC23CC04", name: "Core Course - 4: Data Structures and Algorithms" },
+                { code: "25UBC33CC05", name: "Core Course - 5: Java Programming" },
+                { code: "25UBC33CC06", name: "Core Course - 6: Data Analytics using R programming" },
+                { code: "25UBC43CC07", name: "Core Course - 7: Python Programming" },
+                { code: "25UBC43CC08", name: "Core Course - 8: Software Engineering" },
+                { code: "25UBC53CC09", name: "Core Course - 9: ASP.NET" },
+                { code: "25UBC53CC10", name: "Core Course - 10: Web Technologies" },
+                { code: "25UBC63CC11", name: "Core Course - 11: Full Stack Development" },
+                { code: "25UBC63CC12", name: "Core Course - 12: Data Mining and Warehousing" },
+            ],
+            allied: [
+                { code: "23UBC13AC01", name: "Allied Course - 1: Numerical Methods" },
+                { code: "23UBC23AC02", name: "Allied Course - 2: Statistical Methods" },
+                { code: "23UBC33AO01A", name: "Allied Optional - 1: Financial Accounting Package -TallyPrime Basic" },
+                { code: "23UBC33AO01B", name: "Allied Optional - 1: Accounts - 1" },
+                { code: "23UBC43AO02A", name: "Allied Optional - 2: Financial Accounting Package - TallyPrime Advanced" },
+                { code: "23UBC43AO02B", name: "Allied Optional - 2: Accounts - 2" },
+                { code: "25UBC13AC01", name: "Allied Course - 1: Numerical Methods" },
+                { code: "25UBC23AC02", name: "Allied Course - 2: Statistical Methods" },
+                { code: "25UBC33AO01A", name: "Allied Optional - 1: Financial Accounting Package - Tally Prime Basic" },
+                { code: "25UBC33AO01B", name: "Allied Optional - 1: Accounts - 1" },
+                { code: "25UBC43AO02A", name: "Allied Optional - 2: Financial Accounting Package - Tally Prime Advanced" },
+                { code: "25UBC43AO02B", name: "Allied Optional - 2: Accounts - 2" },
+            ],
+            dse: [
+                { code: "23UBC53ES01A", name: "Discipline Specific Elective - 1: Operating Systems" },
+                { code: "23UBC53ES01B", name: "Discipline Specific Elective - 1: Linux Programming" },
+                { code: "23UBC53ES02A", name: "Discipline Specific Elective - 2: Communication Networks" },
+                { code: "23UBC53ES02B", name: "Discipline Specific Elective - 2: Software Testing" },
+                { code: "23UBC63ES03A", name: "Discipline Specific Elective - 3: Information Security" },
+                { code: "23UBC63ES03B", name: "Discipline Specific Elective - 3: Data Warehousing and Data Mining" },
+                { code: "23UBC63ES04A", name: "Discipline Specific Elective - 4: Fundamentals of IoT" },
+                { code: "23UBC63ES04B", name: "Discipline Specific Elective - 4: Mobile App Development" },
+                { code: "25UBC53ES01A", name: "Discipline Specific Elective - 1: Fundamentals of Internet of Things" },
+                { code: "25UBC53ES01B", name: "Discipline Specific Elective - 1: Cloud Computing" },
+                { code: "25UBC53ES02A", name: "Discipline Specific Elective - 2: Aptitude and Reasoning" },
+                { code: "25UBC53ES02B", name: "Discipline Specific Elective - 2: Cyber Security" },
+                { code: "25UBC63ES03A", name: "Discipline Specific Elective - 3: Distributed Operating Systems" },
+                { code: "25UBC63ES03B", name: "Discipline Specific Elective - 3: Business Analytics" },
+                { code: "25UBC63ES04A", name: "Discipline Specific Elective - 4: Ethical Hacking" },
+                { code: "25UBC63ES04B", name: "Discipline Specific Elective - 4: Web Mining" },
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        },
+        pg: {
+            title: "MCA",
+            core: [
                 { code: "", name: "" },
-                { code: "", name: "" },
-                { code: "", name: "" },
-                { code: "", name: "" },
-                { code: "", name: "" },
+            ]
+        }
+
+    },
+    {
+        id: "Data Science", name: "Department of Data Science", shift: ["I", "II"], hasUG: false, hasPG: true,
+        pg: {
+            title: "M.Sc.Data Science",
+            core: [
+
+            ],
+            dse: [
+
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        }
+    },
+    {
+        id: "Electronics", name: "Department of Electronics", shift: ["I", "II"], hasUG: true, hasPG: true,
+        ug: {
+            title: "B.Sc.Electronics",
+            core: [
+
+            ],
+            allied: [
+
             ],
             dse: [
 
@@ -774,71 +1150,233 @@ const departments = [
             ],
         },
         pg: {
+            title: "M.Sc.Electronics",
             core: [
                 { code: "", name: "" },
             ]
         }
     },
-    { id: "Information Technology", name: "Department of Information Technology ", shift: ["I", "II"], hasUG: true, hasPG: true,
-        ug: {
-            core: [
-
-            ],
-            allied: [
-
-            ],
-            dse: [
-
-            ],
-            genericElective: [
-
-            ],
-            openElective: [
-
-            ],
-        }
-     },
-    { id: "Data Science", name: "Department of Data Science", shift: ["I", "II"], hasUG: true, hasPG: true,
-        ug: {
-            core: [
-
-            ],
-            allied: [
-
-            ],
-            dse: [
-
-            ],
-            genericElective: [
-
-            ],
-            openElective: [
-
-            ],
-        }
-     },
-    { id: "Electronics", name: "Department of Electronics", shift: ["I", "II"], hasUG: true, hasPG: true,
-        ug: {
-            core: [
-
-            ],
-            allied: [
-
-            ],
-            dse: [
-
-            ],
-            genericElective: [
-
-            ],
-            openElective: [
-
-            ],
-        }
-     },
     { id: "Economics", name: "Department of Economics", shift: ["I", "II"], hasUG: true, hasPG: false },
     { id: "Human excellence", name: "Department of Human excellence", shift: ["I", "II"], hasUG: true, hasPG: true },
-    { id: "French", name: "Department of French", shift: ["I", "II"], hasUG: true, hasPG: false,
+    { id: "Human resources management", name: "Department of Human resources management", shift: ["I", "II"], hasUG: true, hasPG: true },
+    {
+        id: "History", name: "Department of History ", shift: ["I", "II"], hasUG: true, hasPG: true,
+        ug: {
+            core: [
+                { code: "23UHS13CC01", name: "Core Course - 1: History of Ancient India up to 1206 CE" },
+                { code: "23UHS13CC02", name: "Core Course - 2: History of Tamil Nadu up to 1311 CE" },
+                { code: "23UHS23CC03", name: "Core Course - 3: Medieval History of India (1206 CE -1707 CE)" },
+                { code: "23UHS23CC04", name: "Core Course - 4: History of Tamil Nadu (1312 CE -1991 CE)" },
+                { code: "23UHS33CC05", name: "Core Course - 5: Modern History of India (1708 CE -1947 CE)" },
+                { code: "23UHS33CC06", name: "Core Course - 6: Select Civilizations of Ancient World" },
+                { code: "23UHS33CC07", name: "Core Course - 7: Indian Geography" },
+                { code: "23UHS43CC08", name: "Core Course - 8: Social and Cultural History of Tamil Nadu" },
+                { code: "23UHS43CC09", name: "Core Course - 9: History of Modern World" },
+                { code: "23UHS43CC10", name: "Core Course - 10: Historical Monuments in Tiruchirappalli" },
+                { code: "23UHS53CC11", name: "Core Course - 11: Historiography" },
+                { code: "23UHS53CC12", name: "Core Course - 12: Indian Polity and Constitution" },
+                { code: "23UHS63CC13", name: "Core Course - 13: Social and Cultural Movements in Modern India" },
+                { code: "23UHS63CC14", name: "Core Course - 14: Political and Social Transitions in Modern Era" },
+                { code: "25UHS13CC01", name: "Core Course - 1: Introduction to History" },
+                { code: "25UHS13CC02", name: "Core Course - 2: History of Ancient India (Upto 711 AD)" },
+                { code: "25UHS13CC03", name: "Core Course - 3: History of Tamil Country (Upto 1735 AD)" },
+                { code: "25UHS23CC04", name: "Core Course - 4: History of Medieval India (712 AD to 1707 AD)" },
+                { code: "25UHS23CC05", name: "Core Course - 5: History of Tamil Nadu (1736 AD - 2011 AD)" },
+                { code: "25UHS33CC06", name: "Core Courses - 6: History of Modern India (1708 AD to 1947 AD)" },
+                { code: "25UHS33CC07", name: "Core Courses - 7: Select Civilizations of Ancient World" },
+                { code: "25UHS43CC08", name: "Core Courses - 8: History of Contemporary India" },
+                { code: "25UHS43CC09", name: "Core Courses - 9: History of Modern World" },
+                { code: "25UHS53CC10", name: "Core Course - 10: Indian Polity" },
+                { code: "25UHS53CC11", name: "Core Course - 11: Social and Cultural Movements in Modern India" },
+                { code: "25UHS53CC12", name: "Core Course - 12: Western Political Thought" },
+                { code: "25UHS63CC13", name: "Core Course - 13: Indian Constitution" },
+                { code: "25UHS63CC14", name: "Core Course - 14: Political and Social Transitions in Modern Era" },
+                { code: "25UHS63CC15", name: "Core Course - 15: Evolution of Judicial System in India" },
+            ],
+            allied: [
+                { code: "23UHS13AC01", name: "Allied Course - 1: Introduction to Archaeology" },
+                { code: "23UHS23AC02", name: "Allied Course - 2: Indian Tourism" },
+                { code: "23UHS33AO01A", name: "Allied Optional - 1: Tourism Marketing" },
+                { code: "23UHS33AO01B", name: "Allied Optional - 1: Destination Management" },
+                { code: "23UHS43AO02A", name: "Allied Optional - 2: Tourism Automation" },
+                { code: "23UHS43AO02B", name: "Allied Optional - 2: Tour Packaging" },
+                { code: "25UHS13AC01", name: "Allied Course - 1: Introduction to Tourism" },
+                { code: "25UHS23AC02", name: "Allied Course - 2: Introduction to Archaeology" },
+                { code: "25UHS33AO01A", name: "Allied Optional - 1: Tour Packaging" },
+                { code: "25UHS33AO01B", name: "Allied Optional - 1: Epigraphy in Tamil Nadu" },
+                { code: "25UHS43AO02A", name: "Allied Optional - 2: General Economics" },
+                { code: "25UHS43AO02B", name: "Allied Optional - 2: Fundamentals of Sociology" },
+            ],
+            dse: [
+                { code: "23UHS53ES01A", name: "Discipline Specific Elective - 1: Architectural Styles in India" },
+                { code: "23UHS53ES01B", name: "Discipline Specific Elective - 1: History of Tourism" },
+                { code: "23UHS53ES02A", name: "Discipline Specific Elective - 2: Western Political Thought" },
+                { code: "23UHS53ES02B", name: "Discipline Specific Elective - 2: Modern Governments" },
+                { code: "23UHS63ES03A", name: "Discipline Specific Elective - 3: Intellectual History of Modern India" },
+                { code: "23UHS63ES03B", name: "Discipline Specific Elective - 3: Economic History of Modern India" },
+                { code: "23UHS63ES04A", name: "Discipline Specific Elective - 4: Museum Management" },
+                { code: "23UHS63ES04B", name: "Discipline Specific Elective - 4: Archive Keeping" },
+                { code: "25UHS53ES01A", name: "Discipline Specific Elective - 1: Indian Geography" },
+                { code: "25UHS53ES01B", name: "Discipline Specific Elective - 1: Agrarian System in India" },
+                { code: "25UHS53ES02A", name: "Discipline Specific Elective - 2: Modern Governments" },
+                { code: "25UHS53ES02B", name: "Discipline Specific Elective - 2: Architectural Styles in India" },
+                { code: "25UHS63ES03A", name: "Discipline Specific Elective - 3: Intellectual History of Modern India" },
+                { code: "25UHS63ES03B", name: "Discipline Specific Elective - 3: Economic History of India" },
+                { code: "25UHS63ES04A", name: "Discipline Specific Elective - 4: Archive Keeping" },
+                { code: "25UHS63ES04B", name: "Discipline Specific Elective - 4: Museum Management" },
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        },
+    },
+    {
+        id: "Mathematics", name: "Department of Mathematics", shift: ["I", "II"], hasUG: true, hasPG: true,
+        ug: {
+
+            core: [
+                { code: "23UMA13CC01", name: "Core Course - 1: Algebra and Trigonometry" },
+                { code: "23UMA13CC02", name: "Core Course - 2: Differential Calculus" },
+                { code: "23UMA23CC03", name: "Core Course - 3: Analytical Geometry and Vector Calculus" },
+                { code: "23UMA23CC04", name: "Core Course - 4: Integral Calculus" },
+                { code: "23UMA33CC05", name: "Core Course - 5: Differential Equations" },
+                { code: "23UMA33CC06", name: "Core Course - 6: Sequences and Series" },
+                { code: "23UMA43CC07", name: "Core Course - 7: Modern Algebra" },
+                { code: "23UMA43CC08", name: "Core Course - 8: Operations Research" },
+                { code: "23UMA53CC09", name: "Core Course - 9: Real Analysis" },
+                { code: "23UMA53CC10", name: "Core Course - 10: Mechanics" },
+                { code: "23UMA63CC11", name: "Core Course - 11: Linear Algebra" },
+                { code: "23UMA63CC12", name: "Core Course - 12: Complex Analysis" },
+                { code: "25UMA13CC01", name: "Core Course - 1: Algebra and Trigonometry" },
+                { code: "25UMA13CC02", name: "Core Course - 2: Differential Calculus" },
+                { code: "25UMA13CC03", name: "Core Course - 3: A Foundation Course in Mathematics" },
+                { code: "25UMA23CC04", name: "Core Course - 4: Analytical Geometry" },
+                { code: "25UMA23CC05", name: "Core Course - 5: Integral Calculus" },
+                { code: "25UMA33CC06", name: "Core Course - 6: Sequences and Series" },
+                { code: "25UMA33CC07", name: "Core Course - 7: Differential Equations" },
+                { code: "25UMA43CC08", name: "Core Course - 8: Operations Research (Internship-embedded Course)" },
+                { code: "25UMA43CC09", name: "Core Course - 9: Modern Algebra" },
+                { code: "25UMA53CC10", name: "Core Course - 10: Real Analysis" },
+                { code: "25UMA53CC11", name: "Core Course - 11: Linear Algebra" },
+                { code: "25UMA53CC12", name: "Core Course - 12: Mechanics" },
+                { code: "25UMA63CC13", name: "Core Course - 13: Complex Analysis" },
+                { code: "25UMA63CC14", name: "Core Course - 14: Computer Oriented Numerical Methods with 'C'" },
+                { code: "25UMA63CC15", name: "Core Course - 15: Discrete Mathematics" },
+            ],
+            allied: [
+                { code: "23UMA13AC01", name: "Allied Course - 1: Statistical Methods - 1" },
+                { code: "23UMA23AC02", name: "Allied Course - 2: Statistical Methods - 2" },
+                { code: "23UMA33AO01A", name: "Allied Optional - 1: Physics - 1" },
+                { code: "23UMA33AO01B", name: "Allied Optional - 1: Accounts - 1" },
+                { code: "23UMA43AO02A", name: "Allied Optional - 2: Physics - 2" },
+                { code: "23UMA43AO02B", name: "Allied Optional - 2: Accounts - 2" },
+                { code: "25UMA13AC01", name: "Allied Course - 1: Statistics - 1" },
+                { code: "25UMA23AC02", name: "Allied Course - 2: Statistics - 2" },
+                { code: "25UMA33AO01A", name: "Allied Optional - 1: Physics - 1" },
+                { code: "25UMA33AO01B", name: "Allied Optional - 1: Accounts - 1" },
+                { code: "25UMA43AO02A", name: "Allied Optional - 2: Physics - 2" },
+                { code: "25UMA43AO02B", name: "Allied Optional - 2: Accounts - 2" },
+            ],
+            dse: [
+                { code: "23UMA53ES01A", name: "Discipline Specific Elective - 1: Automata Theory" },
+                { code: "23UMA53ES01B", name: "Discipline Specific Elective - 1: Number Theory" },
+                { code: "23UMA53ES02A", name: "Discipline Specific Elective - 2: Graph Theory" },
+                { code: "23UMA53ES02B", name: "Discipline Specific Elective - 2: Mathematical Modeling" },
+                { code: "23UMA63ES03A", name: "Discipline Specific Elective - 3: Computer Oriented Numerical Methods" },
+                { code: "23UMA63ES03B", name: "Discipline Specific Elective - 3: Optimization Techniques" },
+                { code: "23UMA63ES04A", name: "Discipline Specific Elective - 4: Astronomy" },
+                { code: "23UMA63ES04B", name: "Discipline Specific Elective - 4: Fuzzy Theory" },
+                { code: "25UMA53ES01A", name: "Discipline Specific Elective - 1: Combinatorics" },
+                { code: "25UMA53ES01B", name: "Discipline Specific Elective - 1: Number Theory" },
+                { code: "25UMA53ES02A", name: "Discipline Specific Elective - 2: Graph Theory" },
+                { code: "25UMA53ES02B", name: "Discipline Specific Elective - 2: Mathematical Modelling" },
+                { code: "25UMA63ES03A", name: "Discipline Specific Elective - 3: Astronomy" },
+                { code: "25UMA63ES03B", name: "Discipline Specific Elective - 3: Optimization Techniques" },
+                { code: "25UMA63ES04A", name: "Discipline Specific Elective - 4: Automata Theory" },
+                { code: "25UMA63ES04B", name: "Discipline Specific Elective - 4: Fuzzy Theory" },
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        }
+    },
+    {
+        id: "Physics", name: "Department of Physics", shift: ["I", "II"], hasUG: true, hasPG: true,
+        ug: {
+            core: [
+                { code: "23UPH13CC01", name: "Core Course - 1: Properties of Matter and Acoustics" },
+                { code: "23UPH23CC02", name: "Core Course - 2: Mechanics" },
+                { code: "23UPH33CC03", name: "Core Course - 3: Mathematical Physics - 1" },
+                { code: "23UPH33CC04", name: "Core Course - 4: Electromagnetism" },
+                { code: "23UPH43CC05", name: "Core Course - 5: Mathematical Physics - 2" },
+                { code: "23UPH43CC06", name: "Core Course - 6: Sound" },
+                { code: "23UPH53CC07", name: "Core Course - 7: Optics" },
+                { code: "23UPH53CC08", name: "Core Course - 8: Concepts of Modern Physics" },
+                { code: "23UPH63CC09", name: "Core Course - 9: Quantum Mechanics" },
+                { code: "23UPH63CC10", name: "Core Course - 10: Atomic" },
+                { code: "25UPH13CC01", name: "Core Course - 1: Properties of Matter" },
+                { code: "25UPH13CP01", name: "Core Practical - 1: Physics Practical - 1" },
+                { code: "25UPH13CC02", name: "Core Course - 2: Foundation Course in Physics" },
+                { code: "25UPH23CC03", name: "Core Course - 3: Mechanics" },
+                { code: "25UPH23CC04", name: "Core Course - 4: Waves and Sound" },
+                { code: "25UPH33CC05", name: "Core Course - 5: Mathematical Physics-1" },
+                { code: "25UPH33CC06", name: "Core Course - 6: Electromagnetism" },
+                { code: "25UPH43CC07", name: "Core Course - 7: Mathematical Physics - 2" },
+                { code: "25UPH43CC08", name: "Core Course - 8: Thermal Physics (Internship Embedded Course)" },
+                { code: "25UPH53CC09", name: "Core Course - 9: Optics" },
+                { code: "25UPH53CC10", name: "Core Course - 10: Concepts of Modern Physics" },
+                { code: "25UPH63CC11", name: "Core Course - 11: Quantum Mechanics" },
+                { code: "25UPH63CC12", name: "Core Course - 12: Atomic" },
+            ],
+            allied: [
+                { code: "23UPH13AC01", name: "Allied Course - 1: Mathematics for Physics - 1" },
+                { code: "23UPH23AC02", name: "Allied Course - 2: Mathematics for Physics - 2" },
+                { code: "23UPH33AO01A", name: "Allied Optional - 1: Chemistry - 1" },
+                { code: "23UPH33AO01B", name: "Allied Optional - 1: Computer Science - 1" },
+                { code: "23UPH43AO02A", name: "Allied Optional - 2: Chemistry - 2" },
+                { code: "23UPH43AO02B", name: "Allied Optional - 2: Computer Science - 2" },
+                { code: "25UPH13AC01", name: "Allied Course - 1: Mathematics for Physics - 1" },
+                { code: "25UPH23AC02", name: "Allied Course - 2: Mathematics for Physics - 2" },
+                { code: "25UPH33AO01A", name: "Allied Optional - 1: Chemistry-1" },
+                { code: "25UPH33AO01B", name: "Allied Optional - 1: Computer Science - 1" },
+                { code: "25UPH43AO02A", name: "Allied Optional - 2: Chemistry-2" },
+                { code: "25UPH43AO02B", name: "Allied Optional - 2: Computer Science - 2" },
+            ],
+            dse: [
+                { code: "23UPH53ES01A", name: "Discipline Specific Elective - 1: Analog and Digital Electronics" },
+                { code: "23UPH53ES01B", name: "Discipline Specific Elective - 1: Design of Analog and Digital Circuits" },
+                { code: "23UPH53ES02A", name: "Discipline Specific Elective - 2: Classical Mechanics" },
+                { code: "23UPH53ES02B", name: "Discipline Specific Elective - 2: Solid State Physics" },
+                { code: "23UPH63ES03A", name: "Discipline Specific Elective - 3: Statistical Mechanics" },
+                { code: "23UPH63ES03B", name: "Discipline Specific Elective - 3: Spectroscopy and Laser" },
+                { code: "23UPH63ES04A", name: "Discipline Specific Elective - 4: Embedded System and Microcontroller" },
+                { code: "23UPH63ES04B", name: "Discipline Specific Elective - 4: Sensor" },
+                { code: "25UPH53ES01A", name: "Discipline Specific Elective - 1: Analog and Digital Electronics" },
+                { code: "25UPH53ES01B", name: "Discipline Specific Elective - 1: Design of Analog and Digital Circuits" },
+                { code: "25UPH53ES02A", name: "Discipline Specific Elective - 2: Solid State Physics" },
+                { code: "25UPH53ES02B", name: "Discipline Specific Elective - 2: Classical Mechanics" },
+                { code: "25UPH63ES03A", name: "Discipline Specific Elective - 3: Spectroscopy and Laser" },
+                { code: "25UPH63ES03B", name: "Discipline Specific Elective - 3: Statistical Mechanics" },
+                { code: "25UPH63ES04A", name: "Discipline Specific Elective - 4: Sensors" },
+                { code: "25UPH63ES04B", name: "Discipline Specific Elective - 4: Embedded System and Microcontroller" },
+
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        },
+    },
+    {
+        id: "Software development and system administration", name: "Department of Software development and system administration", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
             core: [
 
@@ -850,23 +1388,77 @@ const departments = [
 
             ]
         },
-        pg: {
-            core: [
-
-            ],
-            elective: [
-
-            ],
-        }
     },
-    { id: "Hindi", name: "Department of Hindi", shift: ["I", "II"], hasUG: true, hasPG: true },
-    { id: "Human resources management", name: "Department of Human resources management", shift: ["I", "II"], hasUG: true, hasPG: true },
-    { id: "History", name: "Department of History ", shift: ["I", "II"], hasUG: true, hasPG: true },
-    { id: "Mathematics", name: "Department of Mathematics", shift: ["I", "II"], hasUG: true, hasPG: true },
-    { id: "Physics", name: "Department of Physics", shift: ["I", "II"], hasUG: true, hasPG: true },
-    { id: "Sanskrit", name: "Department of Sanskrit", shift: ["I", "II"], hasUG: true, hasPG: true },
-    { id: "Software development and system administration", name: "Department of Software development and system administration", shift: ["I", "II"], hasUG: true, hasPG: true },
-    { id: "Statistics", name: "Department of Statistics", shift: ["I", "II"], hasUG: true, hasPG: true },
+    {
+        id: "Statistics", name: "Department of Statistics", shift: ["I", "II"], hasUG: true, hasPG: true,
+        ug: {
+            core: [
+                { code: "23UST13CC01", name: "Core Course - 1: Descriptive Statistics" },
+                { code: "23UST13CC02", name: "Core Course - 2: Probability Theory" },
+                { code: "23UST23CC03", name: "Core Course - 3: Numerical Methods" },
+                { code: "23UST23CC04", name: "Core Course - 4: Time Series and Index Numbers" },
+                { code: "23UST33CC05", name: "Core Course - 5: Discrete Probability Distributions" },
+                { code: "23UST33CC06", name: "Core Course - 6: Continuous Probability Distributions" },
+                { code: "23UST43CC07", name: "Core Course - 7: Estimation Theory" },
+                { code: "23UST43CC08", name: "Core Course - 8: Testing of Hypothesis" },
+                { code: "23UST53CC09", name: "Core Course - 9: Sampling Theory" },
+                { code: "23UST53CC10", name: "Core Course - 10: Design of Experiments" },
+                { code: "23UST63CC11", name: "Core Course - 11: Statistical Quality Control" },
+                { code: "23UST63CC12", name: "Core Course - 12: Statistical Analysis Based on R - Software" },
+                { code: "25UST13CC01", name: "Core Courses - 1: Descriptive Statistics" },
+                { code: "25UST13CC02", name: "Core Courses - 2: Time series and Index Numbers" },
+                { code: "25UST13CC03", name: "Core Courses - 3: Core Courses - 3: Statistics for Beginners" },
+                { code: "25UST23CC04", name: "Core Courses - 4: Probability Theory" },
+                { code: "25UST23CC05", name: "Core Courses - 5: Numerical Methods" },
+                { code: "25UST33CC06", name: "Core Courses - 6: Discrete Probability Distributions" },
+                { code: "25UST33CC07", name: "Core Courses - 7: Continuous Probability Distributions" },
+                { code: "25UST43CC08", name: "Core Courses - 8: Estimation Theory" },
+                { code: "25UST43CC09", name: "Core Courses - 9: Testing of Hypothesis (Internship Embedded course)" },
+                { code: "25UST53CC10", name: "Core Courses - 10: Sampling Theory" },
+                { code: "25UST53CC11", name: "Core Courses - 11: Design of Experiments" },
+                { code: "25UST53CC12", name: "Core Courses - 12: Data Exploration with R" },
+                { code: "25UST63CC13", name: "Core Courses - 13: Statistical Quality Control" },
+            ],
+            allied: [
+                { code: "23UST13AC01", name: "Allied Course - 1: Mathematics for Statistics - 1" },
+                { code: "23UST23AC02", name: "Allied Course - 2: Mathematics for Statistics - 2" },
+                { code: "23UST33AO01A", name: "Allied Optional - 1: Office Automation" },
+                { code: "23UST33AO01B", name: "Allied Optional - 1: Accounts - 1" },
+                { code: "23UST43AO02A", name: "Allied Optional - 2: C Programming" },
+                { code: "23UST43AO02B", name: "Allied Optional - 2: Accounts - 2" },
+                { code: "25UST13AC01", name: "Allied Course - 1: Office Automation" },
+                { code: "25UST23AC02", name: "Allied Course - 2: C - Programming" },
+                { code: "25UST33AO01A", name: "Allied optional - 1: Mathematics for Statistics - 1" },
+                { code: "25UST33AO01B", name: "Allied optional - 1: Accounts - 1" },
+                { code: "25UST43AO02A", name: "Allied Optional - 2: Mathematics for Statistics - 2" },
+                { code: "25UST43AO02B", name: "Allied Optional - 2: Accounts - 2" },
+            ],
+            dse: [
+                { code: "23UST53ES01A", name: "Discipline Specific Elective - 1: Linear Models, Econometrics and Random Processes" },
+                { code: "23UST53ES01B", name: "Discipline Specific Elective - 1: Real Analysis" },
+                { code: "23UST53ES02A", name: "Discipline Specific Elective - 2: Operations Research - 1" },
+                { code: "23UST53ES02B", name: "Discipline Specific Elective - 2: Stochastic Processes" },
+                { code: "23UST63ES03A", name: "Discipline Specific Elective - 3: Vital Statistics" },
+                { code: "23UST63ES03B", name: "Discipline Specific Elective - 3: Survival Analysis" },
+                { code: "23UST63ES04A", name: "Discipline Specific Elective - 4: Operations Research - 2" },
+                { code: "23UST63ES04B", name: "Discipline Specific Elective - 4: Big-Data Analytics" },
+                { code: "25UST53ES01A", name: "Discipline Specific Elective - 1: Actuarial Statistics" },
+                { code: "25UST53ES01B", name: "Discipline Specific Elective - 1: Stochastic Processes" },
+                { code: "25UST53ES02A", name: "Discipline Specific Elective - 2: Operations Research - 1" },
+                { code: "25UST53ES02B", name: "Discipline Specific Elective - 2: Linear Models, Econometrics and Random Processes" },
+                { code: "25UST63ES03A", name: "Discipline Specific Elective - 3: Population Studies" },
+                { code: "25UST63ES03B", name: "Discipline Specific Elective - 3: Survival Analysis" },
+                { code: "25UST63ES04A", name: "Discipline Specific Elective - 4: Operations Research - 2" },
+                { code: "25UST63ES04B", name: "Discipline Specific Elective - 4: Big-Data Analytics" },
+            ],
+            genericElective: [
+
+            ],
+            openElective: [
+
+            ],
+        },
+    },
     { id: "Viscom technology", name: "Department of Viscom technology", shift: ["I", "II"], hasUG: true, hasPG: true },
 ]
 

@@ -40,13 +40,18 @@ function Subjects(){
             <Header showSearch={false} />
 
             <div className="p-10 text-center">
+                <p className="text-sm text-gray-500 uppercase tracking-widest">
+                    {courseType === "ug"
+                        ? "Undergraduate Programme"
+                        : "Postgraduate Programme"}
+                </p>
 
-                <h1 className="text-3xl font-bold text-[#550000]">
-                    {department?.name.toUpperCase()}
+                <h1 className="mt-2 text-4xl font-bold text-[#550000]">
+                    {department?.name}
                 </h1>
 
-                <h2 className="mt-8 text-xl font-semibold">
-                    Select Subject
+                <h2 className="mt-5 text-[15px] text-gray-600">
+                    Select a subject to continue.
                 </h2>
 
             </div>
@@ -55,7 +60,7 @@ function Subjects(){
 
                 {subjects.length > 0 ? (
 
-                    <table className="w-full border-collapse">
+                    <table className="w-full border-collapse mb-3">
 
                         <thead>
 
@@ -82,7 +87,7 @@ function Subjects(){
                                     className="hover:bg-gray-200 cursor-pointer"
                                 >
 
-                                    <td className="border p-2 text-center ">
+                                    <td className="border p-2 text-center text-gray-800">
 
                                         <Link
                                             to={`/papers/${subject.code}`}
@@ -92,7 +97,7 @@ function Subjects(){
 
                                     </td>
 
-                                    <td className="border p-2 text-left pl-8">
+                                    <td className="border p-2 text-left text-gray-800 pl-8">
 
                                         <Link
                                             to={`/papers/${subject.code}`}
