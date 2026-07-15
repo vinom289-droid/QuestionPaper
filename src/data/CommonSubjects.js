@@ -50,7 +50,7 @@ const commonSubjects = {
 
 
         ],
-        others: [
+        ve: [
             { code: "23UHE14VE01", name: "Value Education - 1: Essentials of Humanity" },
             { code: "23UHE24VE02", name: "Value Education - 2: Fundamentals of Human Rights" },
             { code: "23UHE24AE01", name: "Ability Enhancement Compulsory Course - 2: Environmental studies" },

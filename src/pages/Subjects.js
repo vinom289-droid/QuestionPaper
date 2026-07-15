@@ -3,7 +3,7 @@ import data from "../data/Data";
 import commonSubjects from "../data/CommonSubjects";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
-function Subjects(){
+function Subjects() {
     const { id, courseType, category } = useParams();
 
     const department = data.find(
@@ -15,8 +15,11 @@ function Subjects(){
     if (category === "languages") {
         subjects = commonSubjects[courseType].languages;
     }
-    else if (category === "others") {
-        subjects = commonSubjects[courseType].others;
+    else if (category === "ve") {
+        subjects = commonSubjects[courseType].ve;
+    }
+    else if (category === "ge") {
+        subjects = commonSubjects[courseType].ge;
     }
     else if (category === "core") {
         subjects = department?.[courseType]?.core || [];
@@ -66,7 +69,7 @@ function Subjects(){
 
                             <tr className="bg-[#550000] text-white">
 
-                                <th className="border p-3 text-center">
+                                <th className="border p-3 text-left pl-8">
                                     Course Code
                                 </th>
 
@@ -87,7 +90,7 @@ function Subjects(){
                                     className="hover:bg-gray-200 cursor-pointer"
                                 >
 
-                                    <td className="border p-2 text-center text-gray-800">
+                                    <td className="border p-2 text-left font-semibold text-gray-800 pl-8">
 
                                         <Link
                                             to={`/papers/${subject.code}`}
@@ -97,7 +100,7 @@ function Subjects(){
 
                                     </td>
 
-                                    <td className="border p-2 text-left text-gray-800 pl-8">
+                                    <td className="border p-2 text-left font-semibold text-gray-800 pl-8">
 
                                         <Link
                                             to={`/papers/${subject.code}`}
@@ -118,7 +121,7 @@ function Subjects(){
                 ) : (
 
                     <h2 className="text-center font-light text-red-600 text-[20px]">
-                         ⚠ No Subjects Available. Yet to be released
+                        ⚠ No Subjects Available. Yet to be released
                     </h2>
 
                 )}

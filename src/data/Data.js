@@ -1134,13 +1134,58 @@ const departments = [
         ug: {
             title: "B.Sc.Electronics",
             core: [
-
+                { code: "23UEL13CC01", name: "Core Course - 1: Semiconductor Theory and Electronic Devices" },
+                { code: "23UEL23CC02", name: "Core Course - 2: Electric Circuit Analysis" },
+                { code: "23UEL33CC03", name: "Core Course - 3: Digital Electronics" },
+                { code: "23UEL33CC04", name: "Core Course - 4: Electronic Circuits" },
+                { code: "23UEL43CC05", name: "Core Course - 5: Linear Integrated Circuits" },
+                { code: "23UEL43CC06", name: "Core Course - 6: Communication Electronics" },
+                { code: "23UEL53CC07", name: "Core Course - 7: Microprocessors and Applications" },
+                { code: "23UEL53CC08", name: "Core Course - 8: Sensors and Electronic Instrumentation" },
+                { code: "23UEL63CC09", name: "Core Course - 9: Microcontroller and Embedded System" },
+                { code: "23UEL63CC10", name: "Core Course - 10: Power Electronics" },
+                { code: "25UEL13CC01", name: "Core Course - 1: Semiconductor Theory and Electronic Devices" },
+                { code: "25UEL23CC02", name: "Core Course - 2: Electric Circuit Analysis" },
+                { code: "25UEL33CC03", name: "Core Course - 3: Digital Electronics" },
+                { code: "25UEL33CC04", name: "Core Course - 4: Electronic Circuits" },
+                { code: "25UEL43CC05", name: "Core Course - 5: Linear Integrated Circuits" },
+                { code: "25UEL43CC06", name: "Core Course - 6: Communication Electronics (Internship Embedded Course)" },
+                { code: "25UEL53CC07", name: "Core Course - 7: Microprocessors and Applications" },
+                { code: "25UEL53CC08", name: "Core Course - 8: Sensors and Electronic Instrumentation" },
+                { code: "25UEL63CC09", name: "Core Course - 9: Microcontroller and Embedded System" },
+                { code: "25UEL63CC10", name: "Core Course - 10: Power Electronics" },
             ],
             allied: [
-
+                { code: "23UEL13AC01", name: "Allied Course - 1: Mathematics for Electronics - 1" },
+                { code: "23UEL23AC02", name: "Allied Course - 2: Mathematics for Electronics - 2" },
+                { code: "23UEL33AO01A", name: "Allied Optional - 1: Applied Physics - 1" },
+                { code: "23UEL33AO01B", name: "Allied Optional - 1: Computer Science - 1" },
+                { code: "3UEL43AO02A", name: "Allied Optional - 2: Applied Physics - 2" },
+                { code: "23UEL43AO02B", name: "Allied Optional - 2: Computer Science - 2" },
+                { code: "25UEL13AC01", name: "Allied Course - 1: Mathematics for Electronics - 1" },
+                { code: "25UEL23AC02", name: "Allied Course - 2: Mathematics for Electronics - 2" },
+                { code: "25UEL33AO01A", name: "Allied Optional - 1: Applied Physics - 1" },
+                { code: "25UEL33AO01B", name: "Allied Optional - 1: Computer Science - 1" },
+                { code: "25UEL43AO02A", name: "Allied Optional - 2: Applied Physics - 2" },
+                { code: "25UEL43AO02B", name: "Allied Optional - 2: Computer Science - 2" },
             ],
             dse: [
-
+                { code: "23UEL53ES01A", name: "Discipline Specific Elective - 1: Mobile Communication" },
+                { code: "23UEL53ES01B", name: "Discipline Specific Elective - 1: Medical Electronics" },
+                { code: "23UEL53ES02A", name: "Discipline Specific Elective - 2: C and Python Programming" },
+                { code: "23UEL53ES02B", name: "Discipline Specific Elective - 2: Computer Hardware and Networks" },
+                { code: "23UEL63ES03A", name: "Discipline Specific Elective - 3: Control System" },
+                { code: "23UEL63ES03B", name: "Discipline Specific Elective - 3: Virtual Instrumentation" },
+                { code: "23UEL63ES04A", name: "Discipline Specific Elective - 4: Robotics and Industrial Automation" },
+                { code: "23UEL63ES04B", name: "Discipline Specific Elective - 4: Digital Image Processing" },
+                { code: "25UEL53ES01A", name: "Discipline Specific Elective - 1: Computer Hardware and Networks" },
+                { code: "25UEL53ES01B", name: "Discipline Specific Elective - 1: Medical Electronics" },
+                { code: "25UEL53ES02A", name: "Discipline Specific Elective - 2: C and Embedded C" },
+                { code: "25UEL53ES02B", name: "Discipline Specific Elective - 2: Mobile Communication" },
+                { code: "25UEL63ES03A", name: "Discipline Specific Elective - 3: Control System" },
+                { code: "25UEL63ES03B", name: "Discipline Specific Elective - 3: RF, Microwave and Optical Electronics" },
+                { code: "25UEL63ES04A", name: "Discipline Specific Elective - 4: Robotics and Industry 4.0" },
+                { code: "25UEL63ES04B", name: "Discipline Specific Elective - 4: e-Security systems" },
             ],
             genericElective: [
 
@@ -1162,6 +1207,7 @@ const departments = [
     {
         id: "History", name: "Department of History ", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
+            title: "B.A.History",
             core: [
                 { code: "23UHS13CC01", name: "Core Course - 1: History of Ancient India up to 1206 CE" },
                 { code: "23UHS13CC02", name: "Core Course - 2: History of Tamil Nadu up to 1311 CE" },
@@ -1232,11 +1278,18 @@ const departments = [
 
             ],
         },
+        pg: {
+            title: "M.A.History",
+            core: [
+                { code: "", name: "" },
+            ]
+        }
     },
     {
         id: "Mathematics", name: "Department of Mathematics", shift: ["I", "II"], hasUG: true, hasPG: true,
         ug: {
 
+            title: "B.Sc.Mathematics",
             core: [
                 { code: "23UMA13CC01", name: "Core Course - 1: Algebra and Trigonometry" },
                 { code: "23UMA13CC02", name: "Core Course - 2: Differential Calculus" },
@@ -1304,6 +1357,12 @@ const departments = [
             openElective: [
 
             ],
+        },
+        pg: {
+            title: "M.Sc.Mathematics",
+            core: [
+                { code: "", name: "" },
+            ]
         }
     },
     {
@@ -1374,6 +1433,12 @@ const departments = [
 
             ],
         },
+        pg: {
+            title: "M.Sc.Physics",
+            core: [
+                { code: "", name: "" },
+            ]
+        }
     },
     {
         id: "Software development and system administration", name: "Department of Software development and system administration", shift: ["I", "II"], hasUG: true, hasPG: true,
